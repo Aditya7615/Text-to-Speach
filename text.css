@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #6a3093, #a044ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.container h1 {
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+.container h1 span {
+    display: inline;
+    background: #7e4dff;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    background: #b388fe;
+    color: #ffffff;
+    font-size: 15px;
+    border: 2px solid #fff;
+    outline: 0;
+    padding: 20px;
+    resize: none;
+    margin-bottom: 30px;
+}
+
+textarea::placeholder {
+    font-size: 18px;
+    color: #fff;
+}
+
+.btn {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background: #b388fe;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+button img {
+    width: 16px;
+    margin-right: 10px;
+}
+
+/* Media Queries for Tablet and Mobile */
+@media(max-width: 768px) {
+
+    .container h1{
+        font-size: 30px;
+    }
+
+    textarea {
+        height: 400px;
+        width: 300px;
+    }
+}
+
+@media(max-width: 480px) {
+    .container h1 {
+        font-size: 25px;
+    }
+
+    textarea {
+        height: 400px;
+        font-size: 11px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+}
